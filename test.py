@@ -6,7 +6,7 @@ import speech_recognition as sr
 from cvzone.HandTrackingModule import HandDetector
 
 # Конфигурация
-SERIAL_PORT = 'COM4'
+SERIAL_PORT = 'COM8'
 BAUDRATE = 9600
 COOLDOWN_SECONDS = 1.5
 
@@ -39,7 +39,7 @@ command_map = {
 }
 
 # Инициализация Serial (только для записи). Если не доступен — работа в режиме симуляции.
-arduino = serial.Serial('COM5',9600, timeout=1)
+arduino = serial.Serial('COM8',9600, timeout=1)
 time.sleep(2)
 # --Автоопределение сом-порта--
 
